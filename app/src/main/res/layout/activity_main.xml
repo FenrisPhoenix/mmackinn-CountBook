@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.matteo.mmackinn_countbook.MainActivity">
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/selectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectClick"
+        android:padding="16dp"
+        android:text="select"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myListView" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deleteClick"
+        android:padding="16dp"
+        android:text="delete"
+        app:layout_constraintLeft_toRightOf="@id/selectButton"
+        app:layout_constraintTop_toBottomOf="@id/myListView" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addClick"
+        android:padding="16dp"
+        android:text="add"
+        app:layout_constraintLeft_toRightOf="@id/deleteButton"
+        app:layout_constraintTop_toBottomOf="@id/myListView" />
+
+    <TextView
+        android:id="@+id/modeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="select mode"
+        app:layout_constraintLeft_toRightOf="@+id/addButton"
+        app:layout_constraintTop_toBottomOf="@+id/myListView"/>
+
+    <EditText
+        android:id="@+id/nameBar"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectButton"/>
+
+</android.support.constraint.ConstraintLayout>
